@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="proq1/static/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="proq1/static/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="proq1/static/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="proq1/static/images/favicon_io/site.webmanifest">
+    <title>Замена масло</title>
+</head>
+
+<body>
+    <header>
+        <img src="https://cdn.worldvectorlogo.com/logos/wuerth-logo-1.svg" alt="WURTH Logo">
+    </header>
+
+    <header>
+        <h1>Моторные масла</h1>
+    </header>
+
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#products">Продукция</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Добро пожаловать в наш магазин моторных масел! Мы предлагаем широкий выбор продукции высокого качества.</p>
+        <p>Наш магазин специализируется на предоставлении клиентам лучших моторных масел различных брендов. Мы гордимся
+            своим
+            широким ассортиментом, конкурентоспособными ценами и высоким уровнем обслуживания.</p>
+        <p>Наша команда состоит из профессионалов, готовых помочь вам выбрать подходящее масло для вашего автомобиля. Мы
+            ценим каждого клиента и стремимся сделать покупки у нас максимально удобными и приятными.</p>
+    </section>
+
+    <section id="products">
+        <h2>Продукция</h2>
+        <div class="product">
+            <div class="container">
+                <!-- Меню -->
+                <section id="menu">
+                    <ul id="menu-list">
+                        <!-- Меню будет заполнено динамически с использованием JavaScript -->
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+    <!-- Объединенный скрипт -->
+    <script>
+        const menuList = document.getElementById('menu-list');
+
+        // Заполняем меню динамически
+        function заполнитьМеню() {
+            const меню = [
+                { название: 'WURTH', описание: 'TRIATHLON Cargo Ultra 10W-40', цена: 13200, изображение: 'http://surl.li/qiijn' },
+                { название: 'WURTH', описание: 'TRIATHLON Cargo Ultra 15W-40', цена: 12200, изображение: 'https://evrodetal.by/media/files/products/inside-placeholder-0897325403.jpg' },
+                { название: 'DIVINOL', описание: 'DIVINOL Масло моторное минеральное 10W-40', цена: 11600, изображение: 'https://img-server-10.parts-soft.ru/images/1415/9119525' },
+                { название: 'DIVINOL', описание: 'DIVINOL Масло моторное минеральное 15W-40', цена: 10200, изображение: 'https://divinoloil.ru/images/goods_gallery/53f4994259e0c_49720-Divinol-Multimax-Top-15W-40.jpg' },
+                { название: 'BIZOL', описание: 'BIZOL Масло моторное минеральное 10W-40', цена: 13200, изображение: 'https://static.onlinetrade.ru/img/items/b/motornoe_maslo_bizol_allround_10w_40_sinteticheskoe_20_l_2139722_1.jpg' },
+                { название: 'BIZOL', описание: 'BIZOL Масло моторное минеральное 15W-40', цена: 12200, изображение: 'https://static.onlinetrade.ru/img/items/b/bizol_allround_15w_40_mineralnoe_20_l_2248719_1.jpg' },
+            ];
+
+            меню.forEach(товар => {
+                const li = создатьЭлементМеню(товар);
+                menuList.appendChild(li);
+            });
+        }
+
+        function создатьЭлементМеню(товар) {
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <img src="${товар.изображение}" alt="${товар.название}">
+                <h3>${товар.название}</h3>
+                <p>${товар.описание}</p>
+                <p>Цена: ${товар.цена} сом</p>
+            `;
+            return li;
+        }
+
+        // Вызываем функцию для заполнения меню при загрузке страницы
+        заполнитьМеню();
+    </script>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <div class="contact-info">
+            <p>Главный руководитель Нурислам</p>
+            <p>Телефон: <a href="tel:+996705299899">+996705299899</a></p>
+            <p>instagram: <a href="https://www.instagram.com/stamov_05?igsh=MTBoNnY3ZDgzemp2ZA==">Написать в
+                    instagram</a></p>
+            <p>WhatsApp: <a href="https://wa.me/996705299899">Написать в WhatsApp</a></p>
+        </div>
+        <div class="contact-info">
+            <p>Помощник Таир</p>
+            <p>Телефон: <a href="tel:+996709558396">+996709558396</a></p>
+            <p>instagram: <a href="https://www.instagram.com/arzymat0vvs?igsh=azE2cTlsNGxva3hj">Написать в instagram</a>
+            </p>
+            <p>WhatsApp: <a href="https://wa.me/996709558396">Написать в WhatsApp</a></p>
+        </div>
+        <!-- Добавьте контактные данные, форму обратной связи или карту с расположением -->
+    </section>
+
+    <footer>
+        &copy; 2024 Магазин моторных масел
+    </footer>
+
+</body>
+
+</html>

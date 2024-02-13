@@ -1,0 +1,223 @@
+/* Общие стили для всей страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    color: #333;  
+}
+
+/* Общие стили для основных блоков: header, nav, section, footer */
+header, nav, section, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Стили для заголовка в шапке страницы */
+header {
+    text-align: center; /* Центрирование содержимого внутри header */
+}
+
+header h1 {
+    color: #000000;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+/* Стили для логотипа */
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Стили для навигационного меню */
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Стили для заголовков разделов */
+section h2 {
+    color: #000000;
+    text-align: center;
+}
+
+/* Стили для блока продукта */
+.product {
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+/* Стили для изображений продукта с рамкой */
+.product img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    border: 0px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Увеличение размера шрифта для кнопки "Добавить в корзину" */
+#menu-list button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.9em;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Стили для списка продуктов */
+#menu-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Стили для каждого элемента списка продуктов */
+#menu-list li {
+    width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+/* Стили для изображений в списке продуктов */
+#menu-list img {
+    width: 100%; /* Изменено значение ширины для адаптации под мобильные устройства */
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Стили для текста и кнопок в списке продуктов */
+#menu-list h3, #menu-list p {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Увеличение размера шрифта для описания продукта в списке */
+#menu-list p {
+    color: #555;
+    font-size: 1.2em;
+}
+
+/* Стили для контактной информации */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+/* Стили для абзацев в контактной информации */
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Стили для футера */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Стили для изображения WURTH 15W-40 в списке продуктов */
+#menu-list img[src='https://evrodetal.by/media/files/products/inside-placeholder-0897325403.jpg'] {
+    width: 45%;
+    margin-top: 20px;
+}
+
+/* Стили для логотипа */
+header img[src="https://cdn.worldvectorlogo.com/logos/wuerth-logo-1.svg"]{
+    max-width: 40%;
+    height: auto;
+    margin-top: 10px; /* Регулируйте отступ вверх по вашему усмотрению */
+}
+
+/* Стили для блока контактов */
+#contact {
+    text-align: center;
+}
+
+/* Стили для контактной информации в блоке контактов */
+.contact-info {
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Дополнительные стили для контактной информации */
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #555;
+}
+
+/* Дополнительные стили для ссылок в контактной информации */
+.contact-info a {
+    color: #4caf50;
+    text-decoration: underline;
+}
+
+/* Стили для футера */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Медиа-запросы для адаптации под мобильные устройства */
+@media only screen and (max-width: 600px) {
+    /* Общие стили для всей страницы */
+    body {
+        background: linear-gradient(to bottom, #ffffff, #ffffff);
+    }
+
+    /* Стили для заголовка в шапке страницы */
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Стили для каждого элемента списка продуктов */
+    #menu-list li {
+        width: 100%;
+    }
+
+    /* Стили для изображений в списке продуктов */
+    #menu-list img {
+        width: 100%;
+    }
+
+    /* Увеличение размера шрифта для кнопки "Добавить в корзину" */
+    #menu-list button {
+        font-size: 1.5em;
+    }
+}
