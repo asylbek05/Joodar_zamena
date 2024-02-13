@@ -5,19 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/styles/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="proq1/static/images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="proq1/static/images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="proq1/static/images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="proq1/static/images/favicon_io/site.webmanifest">
-    <title>Замена масло</title>
+    <title>Замена масла</title>
 </head>
 
 <body>
     <header>
         <img src="https://cdn.worldvectorlogo.com/logos/wuerth-logo-1.svg" alt="WURTH Logo">
-    </header>
-
-    <header>
         <h1>Моторные масла</h1>
     </header>
 
@@ -30,8 +23,7 @@
     <section id="about">
         <h2>О нас</h2>
         <p>Добро пожаловать в наш магазин моторных масел! Мы предлагаем широкий выбор продукции высокого качества.</p>
-        <p>Наш магазин специализируется на предоставлении клиентам лучших моторных масел различных брендов. Мы гордимся
-            своим
+        <p>Наш магазин специализируется на предоставлении клиентам лучших моторных масел различных брендов. Мы гордимся своим
             широким ассортиментом, конкурентоспособными ценами и высоким уровнем обслуживания.</p>
         <p>Наша команда состоит из профессионалов, готовых помочь вам выбрать подходящее масло для вашего автомобиля. Мы
             ценим каждого клиента и стремимся сделать покупки у нас максимально удобными и приятными.</p>
@@ -50,6 +42,7 @@
             </div>
         </div>
     </section>
+
     <!-- Объединенный скрипт -->
     <script>
         const menuList = document.getElementById('menu-list');
@@ -62,7 +55,7 @@
                 { название: 'DIVINOL', описание: 'DIVINOL Масло моторное минеральное 10W-40', цена: 11600, изображение: 'https://img-server-10.parts-soft.ru/images/1415/9119525' },
                 { название: 'DIVINOL', описание: 'DIVINOL Масло моторное минеральное 15W-40', цена: 10200, изображение: 'https://divinoloil.ru/images/goods_gallery/53f4994259e0c_49720-Divinol-Multimax-Top-15W-40.jpg' },
                 { название: 'BIZOL', описание: 'BIZOL Масло моторное минеральное 10W-40', цена: 13200, изображение: 'https://static.onlinetrade.ru/img/items/b/motornoe_maslo_bizol_allround_10w_40_sinteticheskoe_20_l_2139722_1.jpg' },
-                { название: 'BIZOL', описание: 'BIZOL Масло моторное минеральное 15W-40', цена: 12200, изображение: 'https://static.onlinetrade.ru/img/items/b/bizol_allround_15w_40_mineralnoe_20_l_2248719_1.jpg' },
+                { название: 'BIZOL', описание: 'BIZOL Масло моторное минеральное 15W-40', цена: 12200, изображение: 'https://static.onlinetrade.ru/img/items/b/bizol_allround_15w_40_minеральное_20_l_2248719_1.jpg' },
             ];
 
             меню.forEach(товар => {
@@ -91,15 +84,14 @@
         <div class="contact-info">
             <p>Главный руководитель Нурислам</p>
             <p>Телефон: <a href="tel:+996705299899">+996705299899</a></p>
-            <p>instagram: <a href="https://www.instagram.com/stamov_05?igsh=MTBoNnY3ZDgzemp2ZA==">Написать в
-                    instagram</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/stamov_05?igsh=MTBoNnY3ZDgzemp2ZA==">Написать в
+                    Instagram</a></p>
             <p>WhatsApp: <a href="https://wa.me/996705299899">Написать в WhatsApp</a></p>
         </div>
         <div class="contact-info">
             <p>Помощник Таир</p>
             <p>Телефон: <a href="tel:+996709558396">+996709558396</a></p>
-            <p>instagram: <a href="https://www.instagram.com/arzymat0vvs?igsh=azE2cTlsNGxva3hj">Написать в instagram</a>
-            </p>
+            <p>Instagram: <a href="https://www.instagram.com/arzymat0vvs?igsh=azE2cTlsNGxva3hj">Написать в Instagram</a></p>
             <p>WhatsApp: <a href="https://wa.me/996709558396">Написать в WhatsApp</a></p>
         </div>
         <!-- Добавьте контактные данные, форму обратной связи или карту с расположением -->
@@ -109,6 +101,235 @@
         &copy; 2024 Магазин моторных масел
     </footer>
 
+    <!-- Общие стили для всей страницы -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffffff, #ffffff);
+            color: #333;
+        }
+
+        /* Общие стили для основных блоков: header, nav, section, footer */
+        header,
+        nav,
+        section,
+        footer {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        /* Стили для заголовка в шапке страницы */
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            color: #000000;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin: 0;
+        }
+
+        /* Стили для логотипа */
+        header img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        /* Стили для навигационного меню */
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        /* Стили для заголовков разделов */
+        section h2 {
+            color: #000000;
+            text-align: center;
+        }
+
+        /* Стили для блока продукта */
+        .product {
+            margin-bottom: 20px;
+            border: 0;
+            border-radius: 0;
+            overflow: hidden;
+        }
+
+        /* Стили для изображений продукта с рамкой */
+        .product img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 0px;
+            border: 0px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        /* Увеличение размера шрифта для кнопки "Добавить в корзину" */
+        #menu-list button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.9em;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Стили для списка продуктов */
+        #menu-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Стили для каждого элемента списка продуктов */
+        #menu-list li {
+            width: 30%;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        /* Стили для изображений в списке продуктов */
+        #menu-list img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Стили для текста и кнопок в списке продуктов */
+        #menu-list h3,
+        #menu-list p {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Увеличение размера шрифта для описания продукта в списке */
+        #menu-list p {
+            color: #555;
+            font-size: 1.2em;
+        }
+
+        /* Стили для контактной информации */
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        /* Стили для абзацев в контактной информации */
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Стили для футера */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        /* Стили для изображения WURTH 15W-40 в списке продуктов */
+        #menu-list img[src='https://evrodetal.by/media/files/products/inside-placeholder-0897325403.jpg'] {
+            width: 45%;
+            margin-top: 20px;
+        }
+
+        /* Стили для логотипа */
+        header img[src="https://cdn.worldvectorlogo.com/logos/wuerth-logo-1.svg"] {
+            max-width: 40%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        /* Стили для блока контактов */
+        #contact {
+            text-align: center;
+        }
+
+        /* Стили для контактной информации в блоке контактов */
+        .contact-info {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        /* Дополнительные стили для контактной информации */
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #555;
+        }
+
+        /* Дополнительные стили для ссылок в контактной информации */
+        .contact-info a {
+            color: #4caf50;
+            text-decoration: underline;
+        }
+
+        /* Стили для футера */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        /* Медиа-запросы для адаптации под мобильные устройства */
+        @media only screen and (max-width: 600px) {
+            /* Общие стили для всей страницы */
+            body {
+                background: linear-gradient(to bottom, #ffffff, #ffffff);
+            }
+
+            /* Стили для заголовка в шапке страницы */
+            header h1 {
+                font-size: 24px;
+            }
+
+            /* Стили для каждого элемента списка продуктов */
+            #menu-list li {
+                width: 100%;
+            }
+
+            /* Стили для изображений в списке продуктов */
+            #menu-list img {
+                width: 100%;
+            }
+
+            /* Увеличение размера шрифта для кнопки "Добавить в корзину" */
+            #menu-list button {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </body>
 
 </html>
